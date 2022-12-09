@@ -2,8 +2,8 @@
 /**
  * main - print a line of code using puts
  *
- * Return: o
-**/
+ * Return: O 
+*/
 int main(void)
 {
 	puts("\"Programming is like building a multilingual puzzle");
