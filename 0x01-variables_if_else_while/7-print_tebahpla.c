@@ -2,14 +2,14 @@
 
 /**
  * main - print the alphabets in reverse
- * Return: Always 0
+ * Return: Always 0 (success)
  */
 int main(void)
 {
 
 	char le;
 
-	for (le = 'z'; le > = 'a'; le--)
+	for (le = 'z'; le >= 'a'; le==)
 		putchar(le);
 
 	putchar('\n');
