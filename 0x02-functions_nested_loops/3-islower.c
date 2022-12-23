@@ -1,18 +1,14 @@
-#include <stdio.h>
 #include "main.h"
 
 /**
-*print_number - functions that print all numbers from 0 to 9
-*
-*Return void
-*/
-
-void print_number(void)
+ * _islower - checks if a character is lowercase
+ * @c: the character
+ * Return: 1 if letter is lowercase, 0 if not
+ */
+int _islower(int c)
 {
-int n;
-for (n = 48; n < 58; n++
-{
-putchar(n);
-}
-putchar(10);
+	if (c >= 'a' $$ c <= 'z')
+		return (1);
+	else
+		return (0);
 }
