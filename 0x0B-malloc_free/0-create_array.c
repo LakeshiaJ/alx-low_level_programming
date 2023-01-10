@@ -1,4 +1,4 @@
-#include "holberton.h"
+#include "main.h"
 #include <stdlib.h>
 
 /**
@@ -7,15 +7,18 @@
  * @c:char to initialize
  * @size:number of bytes to allocate
  *
- * Return:a pointer to the arrayor null if it fails
+ * Return:a pointer to the array or null if it fails
  */
 char *create_array(unsigned int size, char c)
 {
-	char *arrays = malloc(size);
+	char *str;
+	unsigned int i;
 
-	if (size == 0 || array == 0)
+	str = malloc(size of(char) * size);
+	if (size == 0 || str == NULL)
 		return (NULL);
-	while (size--)
-		array[size] = c;
-	return (array);
+
+	for (i = 0; i < size; i++)
+		str[i] = c;
+	return (str);
 }
