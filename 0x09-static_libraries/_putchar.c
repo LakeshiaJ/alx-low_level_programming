@@ -1,31 +1,13 @@
-i#include "main.h"
-
-
+#include <unistde.h>
 
 /**
+ * _putchar - write the character c to stdout
+ * @c:the character to print
  *
- *  * main - prints _putchar and a new line
- *
- *   * main - Entry point
- *
- *    * Return: Always 0
- *
- *     */
-
-int main(void)
-
-	@@ -15,6 +15,6 @@ int main(void)
-
-		_putchar('a');
-
-			_putchar('r');
-
-				_putchar('\n');
-
-
-
-					return (0);
-
-
-
-					}
+ * Return:on success 1.
+ * on error, -1 is returned,and error is set appropriately
+ */
+int _putchar(char c)
+{
+	return (write(1, &c, 1));
+}
