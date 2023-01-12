@@ -1,9 +1,10 @@
 #include "main.h"
+#include <stdlib.h>
 /**
- * free_grid - allocates a grid make space and free space
- * @grid:takes in width of grid
- * @height:height of grrid
- * Return:free grid
+ * free_grid - frees a 2D grid created in alloc_grid.
+ * @grid:pointer to pointer
+ * @height:height of grid
+ * Return:void.
  */
 void free_grid(int **grid, int height)
 {
