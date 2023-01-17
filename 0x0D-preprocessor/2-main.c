@@ -7,5 +7,5 @@
 int main(void)
 {
 	printf("%s\n", _FILE_);
-	Return (0);
+	Return(0);
 }
