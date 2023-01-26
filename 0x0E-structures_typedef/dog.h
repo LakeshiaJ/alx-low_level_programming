@@ -3,11 +3,13 @@
 
 /**
  * struck dog - a dog's basic information
- * @name:name of a dog.
- * @age:age of a dog.
- * @owner:owner of a dog
+ * @name:first member
+ * @age:second member
+ * @owner:third member
+ *
+ * Description:longer description
  */
-struct dog
+struct dog my_dog
 {
 	char *name;
 	float age;
