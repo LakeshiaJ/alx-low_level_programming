@@ -7,12 +7,12 @@
  * @age:age of a dog.
  * @owner:owner of a dog
  */
-struct dog my_dog
+int main(void)
 {
 	char *name;
 	float age;
 	char *owner;
-};
+}
 
 void init_dog(struct dog *d, char *name, float age, char *owner);
 void print_dog(struct dog *d;
