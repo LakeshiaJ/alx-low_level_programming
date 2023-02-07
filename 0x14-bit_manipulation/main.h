@@ -1,5 +1,5 @@
 #ifndef MAIN.H
-#define MAIN.HJ
+#define MAIN.H
 
 int _putchar(char c);
 unsigned int binary_to_uint(const char *b);
