@@ -1,24 +1,31 @@
-#include "main.h"
-#include <stdlib.h>
 #include <stdio.h>
-
+#include <stdlib.h>
 /**
- * main - prints the multiplication of two intergers
- * @argc:argument count
- * @argv:argument vector
- * Return:0 if true,1 if false
- */
+  *main - prints result of multiplication followed by a new line.
+  *@argc: number of arguments passed.
+  *@argv: array of size argc containing arguments passed.
+  *
+  *Return: 0 on success.
+  *1 on error.
+  */
 int main(int argc, char *argv[])
 {
-	int a, b;
+	int count, product;
 
-	if (argc == 1)
+	product = 1;
+	if (argc == 3)
 	{
-		a = atoi(argv[1]);
-		b = atoi(argv[2]);
-		printf("%d\n", a * b);
-		return (0);
+		for (count = 1; count < argc; count++)
+		{
+			product *= atoi(argv[count]);
+		}
+		printf("%d\n", product);
 	}
-	printf("Error\n");
-	return (1);
+	else
+	{
+		printf("Error\n");
+		return (1);
+	}
+
+	return (0);
 }
