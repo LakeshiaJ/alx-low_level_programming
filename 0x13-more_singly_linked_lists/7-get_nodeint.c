@@ -1,20 +1,61 @@
 #include "lists.h"
 /**
- * get_nodeint_at_index - returns the node at a certain index in a linked list
- * @head: first node in the linked list
- * @index: index of the node to return
- *
- * Return: pointer to the node we're looking for, or NULL
- */
-listint_t *get_nodeint_at_index(listint_t *head, unsigned int index)
+  * listint_len - returns the number of elements ina linked listint_t list.
+  * @h: pointer to first element on list.
+  *
+  * Return: number of elements in list.
+  */
+size_t listint_len(const listint_t *h)
 {
- unsigned int i = 0;
- listint_t *temp = head;
- while (temp && i < index)
- {
- temp = temp->next;
- i++;
- }
- return (temp ? temp : NULL);
+	int count;
+
+	count = 0;
+	while (h != NULL)
+	{
+		h = h->next;
+		count++;
+	}
+	return (count);
 }
 
+/**
+  * get_nodeint_at_index - returns nth node of a listint_t linked list.
+  * @head: pointer to first elemnt of list.
+  * @index: index of node.
+  *
+  * Return: nth node,
+  * NULL if not found.
+  */
+listint_t *get_nodeint_at_index(listint_t *head, unsigned int index)
+{
+	listint_t *current;
+	unsigned int count;
+
+	current = head;
+	count = listint_len(head);
+
+	if (current == NULL)
+		count++;
+
+	if (count <= index)
+	{
+		return (NULL);
+	}
+	else
+	{
+		count = 0;
+		while (current != NULL)
+		{
+			if (count == index)
+			{
+				break;
+			}
+			else
+			{
+				count++;
+				current = current->next;
+			}
+		}
+		return (current);
+	}
+}
