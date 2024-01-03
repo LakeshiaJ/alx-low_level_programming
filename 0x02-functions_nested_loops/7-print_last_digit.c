@@ -1,18 +1,15 @@
 #include "main.h"
-
 /**
- * print_last_digit-prints the last digit of a number
- * @n:The number to be created
- * Return: value of the last digit number
- */
+* print_last_digit - function that prints the last digit
+* @n: takes ln an integer
+* Return: returns output
+*/
 int print_last_digit(int n)
 {
-	int ld = n % 10;
+int ln = n % 10;
 
-	if (ld < 0)
-		ld *= -1;
-
-	_putchar(ld + '0');
-
-	return (0);
+if (n < 0)
+ln = ln * -1;
+_putchar(ln + '0');
+return (ln);
 }
